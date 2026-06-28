@@ -1,0 +1,19 @@
+name: find-a-friend-api
+
+services:
+  pg:
+    image: postgres:17
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: find-a-friend
+
+    volumes:
+      - ./docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql
+      - pgdata:/var/lib/postgresql/data
+    
+volumes:
+     pgdata:
