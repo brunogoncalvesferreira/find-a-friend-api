@@ -38,9 +38,9 @@ As seguintes condições devem ser implementadas:
 
 Use este checklist para ajudar a organizar a sua entrega
 
-[ ] Rota para cadastrar uma ORG, garantindo que inclua endereço e número de WhatsApp
+[ X ] Rota para cadastrar uma ORG, garantindo que inclua endereço e número de WhatsApp
 
-[ ] Rota de login para uma ORG
+[ X ] Rota de login para uma ORG
 
 [ ] Rota para cadastrar um pet, garantindo que ele seja associado a uma ORG
 
