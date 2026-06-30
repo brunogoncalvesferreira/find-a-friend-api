@@ -42,11 +42,11 @@ Use este checklist para ajudar a organizar a sua entrega
 
 [ X ] Rota de login para uma ORG
 
-[ ] Rota para cadastrar um pet, garantindo que ele seja associado a uma ORG
+[ x ] Rota para cadastrar um pet, garantindo que ele seja associado a uma ORG
 
-[ ] Rota para listar pets, exigindo a cidade como parâmetro obrigatório
+[ x ] Rota para listar pets, exigindo a cidade como parâmetro obrigatório
 
-[ ] Implementar a funcionalidade de filtros opcionais por características dos pets na listagem
+[ x ] Implementar a funcionalidade de filtros opcionais por características dos pets na listagem
 
 [ ] Rota para visualizar os detalhes de um pet específico
 
