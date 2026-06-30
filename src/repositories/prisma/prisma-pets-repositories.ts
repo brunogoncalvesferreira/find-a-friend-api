@@ -57,4 +57,23 @@ export class PrismaPetsRepositories implements PetsRepositories {
 
     return { pets, totalPets }
   }
+
+  async findByIdPet(id: string): Promise<Pets | null> {
+    const pet = await prisma.pets.findUnique({
+      where: {
+        id,
+      },
+
+      include: {
+        orgs: {
+          select: {
+            responsible_name: true,
+            whatsapp: true,
+          },
+        },
+      },
+    })
+
+    return pet
+  }
 }

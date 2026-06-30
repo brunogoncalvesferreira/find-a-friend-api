@@ -11,4 +11,5 @@ export interface ListPetsParams {
 export interface PetsRepositories {
   create(data: Prisma.PetsUncheckedCreateInput): Promise<Pets>
   list(data: ListPetsParams): Promise<{ pets: Pets[]; totalPets: number }>
+  findByIdPet(id: string): Promise<Pets | null>
 }
