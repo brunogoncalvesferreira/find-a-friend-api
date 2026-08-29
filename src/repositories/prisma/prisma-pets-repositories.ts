@@ -18,39 +18,43 @@ export class PrismaPetsRepositories implements PetsRepositories {
     const pets = await prisma.pets.findMany({
       where: {
         city: {
-          contains: data.city,
+          contains: data.city ?? undefined,
         },
         age: {
-          contains: data.age,
+          equals: data.age ?? undefined,
         },
         size: {
-          contains: data.size,
+          equals: data.size ?? undefined,
         },
         energy_level: {
-          contains: data.energy_level,
+          equals: data.energy_level ?? undefined,
         },
         independence_level: {
-          contains: data.independence_level,
+          equals: data.independence_level ?? undefined,
         },
       },
+
+      orderBy: {
+        created_at: 'desc',
+      }
     })
 
     const totalPets = await prisma.pets.count({
       where: {
         city: {
-          contains: data.city,
+          contains: data.city ?? undefined,
         },
         age: {
-          contains: data.age,
+          equals: data.age ?? undefined,
         },
         size: {
-          contains: data.size,
+          equals: data.size ?? undefined,
         },
         energy_level: {
-          contains: data.energy_level,
+          equals: data.energy_level ?? undefined,
         },
         independence_level: {
-          contains: data.independence_level,
+          equals: data.independence_level ?? undefined,
         },
       },
     })

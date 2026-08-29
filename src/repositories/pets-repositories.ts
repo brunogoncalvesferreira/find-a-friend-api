@@ -1,11 +1,11 @@
 import { Pets, Prisma } from '../../prisma/generated/prisma/client.ts'
 
 export interface ListPetsParams {
-  city?: string // cidade do animal
-  age?: string // idade do animal
-  size?: string // porte do animal
-  energy_level?: string // nível de energia
-  independence_level?: string // nível de independência
+  city?: string | null // cidade do animal
+  age?: 'BABY' | 'YOUNG' | 'ADULT' | 'SENIOR' | null // idade do animal
+  size?: 'SMALL'| 'MEDIUM'| 'LARGE' | null // porte do animal
+  energy_level?: 'LOW'| 'MEDIUM'| 'HIGH' | null // nível de energia
+  independence_level?: 'LOW'| 'MEDIUM'| 'HIGH' | null // nível de independência
 }
 
 export interface PetsRepositories {
