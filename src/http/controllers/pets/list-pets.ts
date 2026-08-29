@@ -7,10 +7,10 @@ const listPetsSchemaParams = z.object({
     .string()
     .transform((city) => city.toLowerCase().trim())
     .optional(),
-  age: z.string().optional(),
-  size: z.string().optional(),
-  energy_level: z.string().optional(),
-  independence_level: z.string().optional(),
+  age: z.enum(['BABY', 'YOUNG', 'ADULT', 'SENIOR']).optional(),
+  size: z.enum(['SMALL', 'MEDIUM', 'LARGE']).optional(),
+  energy_level: z.enum(['LOW', 'MEDIUM', 'HIGH']).optional(),
+  independence_level: z.enum(['LOW', 'MEDIUM', 'HIGH']).optional(),
 })
 
 export async function listPets(request: FastifyRequest, reply: FastifyReply) {

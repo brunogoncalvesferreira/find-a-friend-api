@@ -853,6 +853,62 @@ export type ListDateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaM
 
 
 /**
+ * Reference to a field of type 'Size'
+ */
+export type EnumSizeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Size'>
+    
+
+
+/**
+ * Reference to a field of type 'Size[]'
+ */
+export type ListEnumSizeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Size[]'>
+    
+
+
+/**
+ * Reference to a field of type 'EnergyLevel'
+ */
+export type EnumEnergyLevelFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'EnergyLevel'>
+    
+
+
+/**
+ * Reference to a field of type 'EnergyLevel[]'
+ */
+export type ListEnumEnergyLevelFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'EnergyLevel[]'>
+    
+
+
+/**
+ * Reference to a field of type 'IndependenceLevel'
+ */
+export type EnumIndependenceLevelFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'IndependenceLevel'>
+    
+
+
+/**
+ * Reference to a field of type 'IndependenceLevel[]'
+ */
+export type ListEnumIndependenceLevelFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'IndependenceLevel[]'>
+    
+
+
+/**
+ * Reference to a field of type 'Environment'
+ */
+export type EnumEnvironmentFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Environment'>
+    
+
+
+/**
+ * Reference to a field of type 'Environment[]'
+ */
+export type ListEnumEnvironmentFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Environment[]'>
+    
+
+
+/**
  * Reference to a field of type 'Int'
  */
 export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>

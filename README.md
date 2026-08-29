@@ -48,10 +48,10 @@ Use este checklist para ajudar a organizar a sua entrega
 
 [ x ] Implementar a funcionalidade de filtros opcionais por características dos pets na listagem
 
-[ ] Rota para visualizar os detalhes de um pet específico
+[ x ] Rota para visualizar os detalhes de um pet específico
 
-[ ] Garantir que o acesso de administrador da ORG seja restrito a usuários logados
+[ x ] Garantir que o acesso de administrador da ORG seja restrito a usuários logados
 
-[ ] Aplicar os princípios SOLID durante o desenvolvimento da estrutura da API
+[ x ] Aplicar os princípios SOLID durante o desenvolvimento da estrutura da API
 
 [ ] Criar testes para validar as funcionalidades e regras de negócio

@@ -1,11 +1,11 @@
 import { PetsRepositories } from '../repositories/pets-repositories.ts'
 
 interface ListPetsUseCasesRequest {
-  city?: string
-  age?: string
-  size?: string
-  energy_level?: string
-  independence_level?: string
+  city?: string | null
+  age?: 'BABY' | 'YOUNG' | 'ADULT' | 'SENIOR' | null
+  size?: 'SMALL'| 'MEDIUM'| 'LARGE' | null
+  energy_level?: 'LOW'| 'MEDIUM'| 'HIGH' | null
+  independence_level?: 'LOW'| 'MEDIUM'| 'HIGH' | null
 }
 
 export class ListPetsUseCases {

@@ -110,6 +110,74 @@ export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
   _max?: Prisma.NestedDateTimeFilter<$PrismaModel>
 }
 
+export type EnumSizeFilter<$PrismaModel = never> = {
+  equals?: $Enums.Size | Prisma.EnumSizeFieldRefInput<$PrismaModel>
+  in?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumSizeFilter<$PrismaModel> | $Enums.Size
+}
+
+export type EnumEnergyLevelFilter<$PrismaModel = never> = {
+  equals?: $Enums.EnergyLevel | Prisma.EnumEnergyLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnergyLevelFilter<$PrismaModel> | $Enums.EnergyLevel
+}
+
+export type EnumIndependenceLevelFilter<$PrismaModel = never> = {
+  equals?: $Enums.IndependenceLevel | Prisma.EnumIndependenceLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumIndependenceLevelFilter<$PrismaModel> | $Enums.IndependenceLevel
+}
+
+export type EnumEnvironmentFilter<$PrismaModel = never> = {
+  equals?: $Enums.Environment | Prisma.EnumEnvironmentFieldRefInput<$PrismaModel>
+  in?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnvironmentFilter<$PrismaModel> | $Enums.Environment
+}
+
+export type EnumSizeWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.Size | Prisma.EnumSizeFieldRefInput<$PrismaModel>
+  in?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumSizeWithAggregatesFilter<$PrismaModel> | $Enums.Size
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumSizeFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumSizeFilter<$PrismaModel>
+}
+
+export type EnumEnergyLevelWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.EnergyLevel | Prisma.EnumEnergyLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnergyLevelWithAggregatesFilter<$PrismaModel> | $Enums.EnergyLevel
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumEnergyLevelFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumEnergyLevelFilter<$PrismaModel>
+}
+
+export type EnumIndependenceLevelWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.IndependenceLevel | Prisma.EnumIndependenceLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumIndependenceLevelWithAggregatesFilter<$PrismaModel> | $Enums.IndependenceLevel
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumIndependenceLevelFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumIndependenceLevelFilter<$PrismaModel>
+}
+
+export type EnumEnvironmentWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.Environment | Prisma.EnumEnvironmentFieldRefInput<$PrismaModel>
+  in?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnvironmentWithAggregatesFilter<$PrismaModel> | $Enums.Environment
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumEnvironmentFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumEnvironmentFilter<$PrismaModel>
+}
+
 export type NestedStringFilter<$PrismaModel = never> = {
   equals?: string | Prisma.StringFieldRefInput<$PrismaModel>
   in?: string[] | Prisma.ListStringFieldRefInput<$PrismaModel>
@@ -217,6 +285,74 @@ export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
   _count?: Prisma.NestedIntFilter<$PrismaModel>
   _min?: Prisma.NestedDateTimeFilter<$PrismaModel>
   _max?: Prisma.NestedDateTimeFilter<$PrismaModel>
+}
+
+export type NestedEnumSizeFilter<$PrismaModel = never> = {
+  equals?: $Enums.Size | Prisma.EnumSizeFieldRefInput<$PrismaModel>
+  in?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumSizeFilter<$PrismaModel> | $Enums.Size
+}
+
+export type NestedEnumEnergyLevelFilter<$PrismaModel = never> = {
+  equals?: $Enums.EnergyLevel | Prisma.EnumEnergyLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnergyLevelFilter<$PrismaModel> | $Enums.EnergyLevel
+}
+
+export type NestedEnumIndependenceLevelFilter<$PrismaModel = never> = {
+  equals?: $Enums.IndependenceLevel | Prisma.EnumIndependenceLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumIndependenceLevelFilter<$PrismaModel> | $Enums.IndependenceLevel
+}
+
+export type NestedEnumEnvironmentFilter<$PrismaModel = never> = {
+  equals?: $Enums.Environment | Prisma.EnumEnvironmentFieldRefInput<$PrismaModel>
+  in?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnvironmentFilter<$PrismaModel> | $Enums.Environment
+}
+
+export type NestedEnumSizeWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.Size | Prisma.EnumSizeFieldRefInput<$PrismaModel>
+  in?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Size[] | Prisma.ListEnumSizeFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumSizeWithAggregatesFilter<$PrismaModel> | $Enums.Size
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumSizeFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumSizeFilter<$PrismaModel>
+}
+
+export type NestedEnumEnergyLevelWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.EnergyLevel | Prisma.EnumEnergyLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.EnergyLevel[] | Prisma.ListEnumEnergyLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnergyLevelWithAggregatesFilter<$PrismaModel> | $Enums.EnergyLevel
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumEnergyLevelFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumEnergyLevelFilter<$PrismaModel>
+}
+
+export type NestedEnumIndependenceLevelWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.IndependenceLevel | Prisma.EnumIndependenceLevelFieldRefInput<$PrismaModel>
+  in?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  notIn?: $Enums.IndependenceLevel[] | Prisma.ListEnumIndependenceLevelFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumIndependenceLevelWithAggregatesFilter<$PrismaModel> | $Enums.IndependenceLevel
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumIndependenceLevelFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumIndependenceLevelFilter<$PrismaModel>
+}
+
+export type NestedEnumEnvironmentWithAggregatesFilter<$PrismaModel = never> = {
+  equals?: $Enums.Environment | Prisma.EnumEnvironmentFieldRefInput<$PrismaModel>
+  in?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  notIn?: $Enums.Environment[] | Prisma.ListEnumEnvironmentFieldRefInput<$PrismaModel>
+  not?: Prisma.NestedEnumEnvironmentWithAggregatesFilter<$PrismaModel> | $Enums.Environment
+  _count?: Prisma.NestedIntFilter<$PrismaModel>
+  _min?: Prisma.NestedEnumEnvironmentFilter<$PrismaModel>
+  _max?: Prisma.NestedEnumEnvironmentFilter<$PrismaModel>
 }
 
 
