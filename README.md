@@ -54,4 +54,4 @@ Use este checklist para ajudar a organizar a sua entrega
 
 [ x ] Aplicar os princípios SOLID durante o desenvolvimento da estrutura da API
 
-[ ] Criar testes para validar as funcionalidades e regras de negócio
+[  ] Criar testes para validar as funcionalidades e regras de negócio
